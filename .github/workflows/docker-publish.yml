@@ -84,6 +84,8 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           file: ${{ context}}/${{ matrix.type }}/Dockerfile
+          build-args: |
+            TIKA_VERSION=${{ github.ref_name }}
 
 
       # Sign the resulting Docker image digest except on PRs.
