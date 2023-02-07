@@ -7,6 +7,12 @@ This repo is just a fork of [Tika Docker](https://github.com/apache/tika-docker)
 
 Other then the above changes everything is the same, you can check all the changes [here](https://github.com/apache/tika-docker/compare/master...kennedyoliveira:tika-docker-multiarch:master)
 
+You can pull this image with
+
+```
+docker pull ghcr.io/kennedyoliveira/apache-tika:{version}-{full / minimal}
+```
+
 ## Supported platforms
 
 * linux/amd64
