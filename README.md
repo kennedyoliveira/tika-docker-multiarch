@@ -73,12 +73,6 @@ Below are the most recent 1.x series tags. **Note** that as of 30 September 2022
 
 You can see a full set of tags for historical versions [here](https://hub.docker.com/r/apache/tika/tags?page=1&ordering=last_updated).
 
-You can pull this image with
-
-```
-docker pull ghcr.io/kennedyoliveira/apache-tika:{version}-{full or minimal}
-```
-
 ## Usage
 
 ### Default
