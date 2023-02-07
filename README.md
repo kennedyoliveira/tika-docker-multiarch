@@ -1,3 +1,18 @@
+# tika-docker-multiarch
+
+This repo is just a fork of [Tika Docker](https://github.com/apache/tika-docker) with main changes:
+
+* This builds multi arch images supporting multiple platforms
+* Adds the language portuguese on the `full` image
+
+Other then the above changes everything is the same, you can check all the changes [here](https://github.com/apache/tika-docker/compare/master...kennedyoliveira:tika-docker-multiarch:master)
+
+## Supported platforms
+
+* linux/amd64
+* linux/arm/v7
+* linux/arm64/v8
+
 # tika-docker <!--- update this once we migrate to github actions(?) [![Build Status](https://api.travis-ci.com/apache/tika-docker.svg?branch=master)](https://travis-ci.com/github/apache/tika-docker) -->
 
 This repo is used to create convenience Docker images for Apache Tika Server published as [apache/tika](https://hub.docker.com/r/apache/tika) on DockerHub by the [Apache Tika](http://tika.apache.org) Dev team
@@ -51,6 +66,12 @@ Below are the most recent 1.x series tags. **Note** that as of 30 September 2022
 - `1.28.1-full`: Apache Tika Server 1.28.1 (Full)
 
 You can see a full set of tags for historical versions [here](https://hub.docker.com/r/apache/tika/tags?page=1&ordering=last_updated).
+
+You can pull this image with
+
+```
+docker pull ghcr.io/kennedyoliveira/apache-tika:{version}-{full or minimal}
+```
 
 ## Usage
 
